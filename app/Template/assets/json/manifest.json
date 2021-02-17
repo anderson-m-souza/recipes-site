@@ -1,0 +1,29 @@
+{
+    "short_name": "Recipes",
+    "name": "Recipes",
+    "start_url": "http://localhost/recipes/",
+    "background_color": "#F2EFDF",
+    "display": "standalone",
+    "theme_color": "#3A2112",
+    "description": "Search for recipes from all over the world by categories or nationality.",
+    "icons": [
+        {
+            "src": "../img/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "../img/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "../img/icon-maskable-196x196.png",
+            "sizes": "196x196",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

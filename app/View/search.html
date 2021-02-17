@@ -1,0 +1,17 @@
+<seaction class="search">
+    <h1>{{strSearch}}</h1>
+    <ul class="search__list">
+        {% for meal in meals %}
+            <li class="search__item">
+                <a href="?page=recipe&id={{meal.idMeal}}" class="search__link">
+                    <div class="search__thumb-container">
+                        <div class="search__thumb-box">
+                            <img class="search__thumb" src="{{meal.strMealThumb}}" alt="{{meal.strMeal}}" loading="lazy">
+                        </div>
+                    </div>
+                    <p class="search__name">{{meal.strMeal}}</p>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</seaction>

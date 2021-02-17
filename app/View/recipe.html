@@ -1,0 +1,33 @@
+<seaction class="recipe">
+    <h1>{{strMeal}}</h1>
+    <p class="recipe__area">{{strArea}}</p>
+    <div class="recipe__photo-box">
+        <img src="{{strMealThumb}}" alt="{{strMeal}} from {{strArea}}" class="recipe__photo" loading="lazy">
+    </div>
+    <h2>Ingredients</h2>
+    <ul>
+        {% for ingredient in strIngredients %}
+            <li class="recipe__ingredient-item">
+                <div class="recipe__ingredient-photo-container">
+                    <div class="recipe__ingredient-photo-box">
+                        <img class="recipe__ingredient-photo" src="https://www.themealdb.com/images/ingredients/{{ingredient.name}}-Small.png" alt="{{ingredient.name}}" loading="lazy">
+                    </div>
+                </div>
+                <p>{{ingredient.measure}} {{ingredient.name}}</p>
+            </li>
+        {% endfor %}
+    </ul>
+    <h2>Instructions</h2>
+    <div class="recipe__instructions">
+        <p>{{strInstructions|raw}}</p>
+        {% if strSource %}
+            <a href="{{strSource}}" class="recipe__source" target="_blank" rel="noopener">Source: {{strSource}}</a>
+        {% endif %}
+    </div>
+    {% if strYoutube %}
+        <h2>Video</h2>
+        <div class="recipe__video-box">
+            <iframe class="recipe__video-iframe" src="https://www.youtube.com/embed/{{strYoutube}}" title="Video - How to make {{strArea}} {{strMeal}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    {% endif %}
+</seaction>
