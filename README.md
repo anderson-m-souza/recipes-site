@@ -1,47 +1,49 @@
 # Recipes
 
-Pesquisar receitas da API pública [TheMEalDB](https://www.themealdb.com/).
+[versão em português](https://github.com/anderson-m-souza/recipes-site/blob/master/README-pt-br.md)
 
-### Objetivo
+Search recipes at the public API [TheMEalDB](https://www.themealdb.com/).
 
-Meu objetivo é executar todas as etapas da implementação de um site, e praticar o que estou estudando.
+### Objective
+
+My goal is to perform all the steps of implementing a website, and to practice what I've been studying.
 
 ### Site
 
-Fiz um site simples com apenas 3 páginas.
+I made a simple website with only 3 pages.
 
-Na Home, há duas opções de busca, por categoria e por nacionalidade.
+At the Home page there are two search options: by category and by nationality.
 
-![página inicial](readme-files/home-screenshot.png)
+![home page](readme-files/home-screenshot.png)
 
-A listagem mostra o resuldado da pesquisa.
+The list page shows the search result.
 
-![página de listagem](readme-files/list-screenshot.png)
+![list page](readme-files/list-screenshot.png)
 
-E a página da receita mostra todas as informações disponíveis na API. Nome do prato, nacionalidade, foto, ingredientes, modo de preparo, uma fonte, e um video.
+And the recipe page shows all the information available in the API. Name of the dish, nationality, photo, ingredients, instructions, a source, and a video.
 
-![página de receita](readme-files/recipe.gif)
+![recipe page](readme-files/recipe.gif)
 
-### Tecnologias
+### Technologies
 
-Esse projeto está sendo desenvolvido com a arquitetura MVC, baseado na [Série | Criando Site em PHP + MVC + CRUD](https://www.youtube.com/playlist?list=PLgbAYUnxJ2NE6eM2xkOlpqJ5sl37bLyKx) de [Rafael Capoani](https://www.youtube.com/c/RafaelCapoani/featured)
+I'm developing this project with the MVC architecture, based on the video series [Criando Site em PHP + MVC + CRUD](https://www.youtube.com/playlist?list=PLgbAYUnxJ2NE6eM2xkOlpqJ5sl37bLyKx) (in portuguese) by [Rafael Capoani](https://www.youtube.com/c/RafaelCapoani/featured).
 
-A API é a [TheMealDB](https://www.themealdb.com/).
+The API is [TheMealDB](https://www.themealdb.com/).
 
-Para carregar as informações no HTML, usei a template engine para PHP [Twig](https://twig.symfony.com/).
+To load the information in HTML, I used the template engine for PHP [Twig] (https://twig.symfony.com/).
 
-Pretendo implementar URLs amigáveis adicionando um arquivo htaccess, mas ainda não obtive sucesso nesta etapa.
+I intend to implement friendly URLs by adding an ".htaccess" file, but I still haven't been successful in this step.
 
-Criei um manifest e um maskable icon pra que o site pudesse ser utilizado como PWA.
+I've created a manifest and a maskable icon so that the site could be used as a PWA (Progressive Web App).
 
-No CSS, usei o grid layout, flexbox e a [Metodologia BEM (Block Element Modifier)](http://getbem.com/) para a nomeação de classes.
+In CSS, I've used grid layout, flexbox and the [BEM (Block Element Modifier)](http://getbem.com/) methodology to name classes.
 
-O layout foi feito no [Adobe Xd](https://www.adobe.com/br/products/xd.html).
+The layout was made in [Adobe Xd](https://www.adobe.com/br/products/xd.html).
 
-Usei uma fonte do [Google Fonts](https://fonts.google.com/specimen/Raleway?preview.text_type=custom) carregada localmente.
+I've used a [Google Fonts](https://fonts.google.com/specimen/Raleway?preview.text_type=custom) font loaded locally.
 
-E ícones do [Fontawesome](https://fontawesome.com/icons?d=gallery&q=food).
+And [Fontawesome](https://fontawesome.com/icons?d=gallery&q=food) icons.
 
-### Instalação
+### Installation
 
-Para testar o projeto, é necessário ter um servidor local tipo XAMPP configurado. E abrir o site no localhost.
+To test the project, it is necessary to have a local server (XAMPP, WAMPP etc) configured. And open the site at the localhost.
