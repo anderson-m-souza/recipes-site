@@ -1,6 +1,6 @@
 # Recipes
 
-[english version](https://github.com/anderson-m-souza/recipes-site/blob/master/README.md)
+[english version](https://github.com/anderson-m-souza/recipes-site#readme)
 
 Pesquisar receitas da API pública [TheMEalDB](https://www.themealdb.com/).
 
