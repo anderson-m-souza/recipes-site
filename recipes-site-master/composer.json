@@ -1,0 +1,8 @@
+{
+    "name": "anderson/recipes",
+    "description": "Site de consulta a API TheMealDB https://www.themealdb.com/api.php",
+    "type": "project",
+    "require": {
+        "twig/twig": "^3.3"
+    }
+}

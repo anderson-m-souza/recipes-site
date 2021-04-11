@@ -1,0 +1,31 @@
+<section class="home">
+    <h1 class="home__title">Search for a recipe</h1>
+    <ul class="home__search">
+        <li class="home__search-option">
+            <form class="home__search-form" method="GET">
+                <input type="hidden" name="page" value="search">
+                <input type="hidden" name="method" value="category">
+                <label class="home__search-label" for="category">Category:</label>
+                <select class="home__search-select" name="name" id="category">
+                    {% for category in categories %}
+                        <option value="{{category.strCategory}}">{{category.strCategory}}</option>
+                    {% endfor %}
+                </select>
+                <button class="home__search-btn" type="submit">Search</button>
+            </form>
+        </li>
+        <li class="home__search-option">
+            <form class="home__search-form" method="GET">
+                <input type="hidden" name="page" value="search">
+                <input type="hidden" name="method" value="area">
+                <label class="home__search-label" for="area">Nationality:</label>
+                <select class="home__search-select" name="name" id="area">
+                    {% for area in countries %}
+                        <option value="{{area.strArea}}">{{area.strArea}}</option>
+                    {% endfor %}
+                </select>
+                <button class="home__search-btn" type="submit">Search</button>
+            </form>
+        </li>
+    </ul>
+</section>
